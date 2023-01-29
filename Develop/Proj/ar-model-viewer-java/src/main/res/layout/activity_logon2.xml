@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogonActivity2">
+<!--    background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/zhuce_background2"
+        android:scaleType="centerCrop"
+        />
+<!--    UI-->
+<!--    welcome to -->
+    <ImageView
+        android:id="@+id/logon2_welcome"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_huanying"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+<!--    iland -->
+    <ImageView
+        android:id="@+id/logon2_logo"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_logo"
+        app:layout_constraintLeft_toLeftOf="@+id/logon2_welcome"
+        app:layout_constraintTop_toBottomOf="@+id/logon2_welcome"
+        />
+<!--    bottom framework -->
+    <ImageView
+        android:id="@+id/logon2_bottom_framework"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_juxingkuang"
+        app:layout_constraintTop_toBottomOf="@+id/logon2_logo"
+        tools:layout_editor_absoluteX="0dp"/>
+<!--    prompt greeting -->
+    <ImageView
+        android:id="@+id/logon2_prompt_greeting"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_wenhouyu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logon2_bottom_framework"
+        android:layout_marginTop="30dp"
+        />
+<!--    prompt phone number -->
+    <ImageView
+        android:id="@+id/logon2_prompt_phone_number"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_shoujihaoma"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logon2_prompt_greeting"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintHorizontal_bias="0.2"
+        />
+<!--    dividing line for phone number -->
+    <ImageView
+        android:id="@+id/logon2_dividing_line"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_shuxian"
+        app:layout_constraintRight_toLeftOf="@+id/logon2_edit_phone_number"
+        app:layout_constraintTop_toTopOf="@+id/logon2_edit_phone_number"
+        app:layout_constraintBottom_toBottomOf="@id/logon2_edit_phone_number"
+        android:layout_marginTop="4dp"
+        />
+<!--    prefix of phone number-->
+<!--    <ImageView-->
+<!--        android:id="@+id/logon2_phone_number_prefix"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@mipmap/zhuce_plus86"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/logon2_dividing_line"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/logon2_edit_phone_number"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/logon2_edit_phone_number"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintRight_toLeftOf="@id/logon2_dividing_line"
+        app:layout_constraintTop_toTopOf="@+id/logon2_edit_phone_number"
+        app:layout_constraintBottom_toBottomOf="@id/logon2_edit_phone_number"
+        android:text="+86"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+<!--    edit text for phone number-->
+    <EditText
+        android:id="@+id/logon2_edit_phone_number"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-20dp"
+        android:background="@android:color/transparent"
+        android:hint=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logon2_prompt_phone_number"
+        android:lines="1"
+        android:inputType="phone"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        />
+
+<!--    underline for phone number -->
+    <ImageView
+        android:id="@+id/logon2_phone_number_underline"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_hengxian1"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/logon2_edit_phone_number" />
+
+<!--    button for phone number-->
+    <ImageButton
+        android:id="@+id/zhuce2_delete_phone_number"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/zhuce_cha"
+        app:layout_constraintLeft_toRightOf="@id/logon2_edit_phone_number"
+        app:layout_constraintTop_toTopOf="@+id/logon2_edit_phone_number"
+        app:layout_constraintBottom_toBottomOf="@id/logon2_edit_phone_number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+
+<!--    prompt for identifying code-->
+    <ImageView
+        android:id="@+id/logon2_prompt_identifying_code"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_yanzhengma"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logon2_edit_phone_number"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.2"
+        />
+
+<!--    edit text for identifying code-->
+    <EditText
+        android:id="@+id/logon2_edit_identifying_code"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-20dp"
+        android:background="@android:color/transparent"
+        android:hint=""
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logon2_prompt_identifying_code"
+        android:selectAllOnFocus="true"
+        />
+
+<!--    underline for identifying code -->
+    <ImageView
+        android:id="@+id/logon2_identifying_code_underline"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/zhuce_hengxian1"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/logon2_edit_identifying_code" />
+
+<!--    button for identifying code -->
+    <ImageButton
+        android:id="@+id/zhuce2_count_down"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/zhuce_daojishi"
+        app:layout_constraintLeft_toRightOf="@id/logon2_edit_identifying_code"
+        app:layout_constraintTop_toTopOf="@id/logon2_edit_identifying_code"
+        app:layout_constraintBottom_toBottomOf="@id/logon2_edit_identifying_code"
+        android:layout_marginLeft="10dp"
+        />
+
+<!--    finish button -->
+    <ImageButton
+        android:id="@+id/zhuce2_finish"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/zhuce_kaishi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logon2_identifying_code_underline"
+        android:layout_marginTop="70dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

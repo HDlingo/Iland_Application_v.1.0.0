@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="seekbar_thumb_stroke_width">3dp</dimen>
+    <dimen name="seekbar_thumb_width">30dp</dimen>
+    <dimen name="seekbar_thumb_height">30dp</dimen>
+    <dimen name="color_size_preview_width">30dp</dimen>
+    <dimen name="color_size_preview_height">30dp</dimen>
+    <dimen name="sight_button_pos_X">10dp</dimen>
+    <dimen name="sight_button_pos_Y">50dp</dimen>
+</resources>

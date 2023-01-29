@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/diban_day"
+    tools:context=".MainPageActive"
+    >
+
+
+
+
+<!--    image view for hi and morning-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/hi_day"
+        android:id="@+id/image_view_hi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/main_page_button_padding_top"
+        android:layout_marginLeft="20dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        />
+
+    <ImageView
+        android:id="@+id/main_page_morning_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/morning_day"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_hi"
+        android:layout_marginStart="20dp"
+        />
+<!--    buttons-->
+<!--    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/main_page_setting_button"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="@dimen/main_page_button_padding_top"-->
+<!--        app:icon="@mipmap/open_day"-->
+<!--        app:iconSize="@dimen/main_page_button_size"-->
+<!--        android:outlineProvider="none"-->
+<!--        android:backgroundTint="@android:color/transparent"/>-->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_page_button_size"
+        android:background="@null"
+        android:src="@mipmap/open_day"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="@dimen/main_page_button_padding_top"
+        app:layout_constraintRight_toLeftOf="@+id/main_page_setting_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/main_page_open_buttons_group"/>
+
+    <ImageButton
+        android:id="@+id/main_page_deer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_page_button_size"
+        android:src="@mipmap/deer_day"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toLeftOf="@+id/main_page_open_buttons_group"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="@dimen/main_page_button_padding_top"
+        tools:ignore="InvalidId" />
+
+    <ImageButton
+        android:id="@+id/main_page_personal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_page_button_size"
+        android:src="@mipmap/personal_day"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toLeftOf="@+id/main_page_deer_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="@dimen/main_page_button_padding_top"
+        tools:ignore="InvalidId" />
+
+    <ImageButton
+        android:id="@+id/main_page_setting_button"
+        android:layout_width="@dimen/main_page_button_size"
+        android:layout_height="@dimen/main_page_button_size"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/main_page_button_padding_top"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/setting_day"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    bottom navigation bar    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_page_bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_page_bottom_navigation"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/main_page_framelayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_page_bottom_navigation_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/main_page_morning_image"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_page_navigation_mindfulness"
+        android:icon="@mipmap/zhengnian_day"
+        android:title="正念"
+        />
+
+    <item
+        android:id="@+id/main_page_navigation_sandplay"
+        android:icon="@mipmap/xiangting_day"
+        android:title="箱庭"
+        />
+
+    <item
+        android:id="@+id/main_page_navigation_other"
+        android:icon="@mipmap/qita_day"
+        android:title="其他" />
+</menu>

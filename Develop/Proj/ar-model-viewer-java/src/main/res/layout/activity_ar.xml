@@ -1,0 +1,295 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ar.ArActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/arFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textColor="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/intensityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/intensity"
+        android:textColor="#E5DCDC"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/rangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/range"
+        android:textColor="#E5DCDC"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/colorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/color"
+        android:textColor="#E5DCDC"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="hello"
+        android:textColor="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/openlightbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/addlight" />
+
+    <ImageButton
+        android:id="@+id/cancellightbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/removelight" />
+
+    <ImageButton
+        android:id="@+id/fixlightbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/fixlight" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="hello"
+        android:textColor="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/intensityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/intensity" />
+
+    <ImageButton
+        android:id="@+id/colorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/color" />
+
+    <SeekBar
+        android:id="@+id/intensitySeekBar"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="15dp"
+        android:progressBackgroundTint="#E5DCDC"
+        android:progressBackgroundTintMode="src_in"
+        android:progressTint="#E5DCDC"
+        android:progressTintMode="src_in"
+        android:thumbTint="#E5DCDC"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/rangeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/range" />
+
+    <SeekBar
+        android:id="@+id/rangeSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="15dp"
+        android:progressBackgroundTint="#E5DCDC"
+        android:progressBackgroundTintMode="src_in"
+        android:progressTint="#E5DCDC"
+        android:progressTintMode="src_in"
+        android:thumbTint="#E5DCDC"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/colorSeekBar"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="15dp"
+        android:maxHeight="3dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/sun" />
+
+
+
+    <ImageButton
+        android:id="@+id/sightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/sight_button_pos_X"
+        android:layout_marginTop="@dimen/sight_button_pos_Y"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/eye" />
+
+    <ImageButton
+        android:id="@+id/unsightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/sight_button_pos_X"
+        android:layout_marginTop="@dimen/sight_button_pos_Y"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/invisible" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/sightButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|right"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        app:srcCompat="@drawable/eye" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/unsightButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|right"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:visibility="invisible"-->
+<!--        app:srcCompat="@drawable/invisible" />-->
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/sun" />
+
+    <ImageButton
+        android:id="@+id/kioskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/sight_button_pos_X"
+        android:layout_marginTop="@dimen/sight_button_pos_Y"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kiosk" />
+
+    <ImageButton
+        android:id="@+id/towerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/sight_button_pos_X"
+        android:layout_marginTop="@dimen/sight_button_pos_Y"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/tower" />
+
+    <ImageButton
+        android:id="@+id/mountainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/sight_button_pos_X"
+        android:layout_marginTop="@dimen/sight_button_pos_Y"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/mountain" />
+
+    <ImageButton
+        android:id="@+id/bridgeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="@dimen/sight_button_pos_X"
+        android:layout_marginTop="@dimen/sight_button_pos_Y"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/bridge" />
+
+    <!--      android:splitTrack="false"-->
+</FrameLayout>

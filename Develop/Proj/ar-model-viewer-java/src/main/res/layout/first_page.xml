@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/kaishi_beijing"
+    tools:context=".FirstPage">
+
+    <ImageButton
+        android:id="@+id/kaishi_denglu"
+        android:layout_width="229dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/kaishi_denglu" />
+
+    <ImageButton
+        android:id="@+id/kaishi_zhuce"
+        android:layout_width="96dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/kaishi_denglu"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/kaishi_zhuce" />
+
+    <ImageView
+        android:id="@+id/kaishi_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/kaishi_logo" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/kaishi_logo"
+        android:layout_alignLeft="@+id/kaishi_logo"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:src="@mipmap/kaishi_iland"
+        />
+
+</RelativeLayout>

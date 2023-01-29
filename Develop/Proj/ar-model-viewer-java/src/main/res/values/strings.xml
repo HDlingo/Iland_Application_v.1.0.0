@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translation_description="App Name [CHAR LIMIT=40]">iland</string>
+    <string name="intensity">光照强度</string>
+    <string name="range">光照范围</string>
+    <string name="color">光照颜色</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome to iLand!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="main_page_navigation_sandplay">"sandplay" </string>
+    <string name="main_page_navigation_mindfulness">"mindfulness" </string>
+    <string name="main_page_navigation_other">"other" </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    for logon2 activity -->
+    <string name="default_phone_number">"1812345678"</string>
+</resources>
